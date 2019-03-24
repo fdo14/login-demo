@@ -1,0 +1,116 @@
+body{
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #a2a5a2;
+  color: #4a555f;
+}
+
+.pass{
+  font-size: 10px;
+}
+.eye {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.eye::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+}
+
+.text-wrapper {
+  position: relative;
+  width: fit-content;
+}
+  .input-box {
+    margin-top: 100px;
+    border-radius: 5px;
+    border: 1px solid #9f9f9f;
+    padding: 5px 10px;
+    z-index: 1;
+  }
+  .measure-box {
+    white-space: nowrap;
+    width: fit-content;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  input{
+    width: 155px;
+    background-color: inherit;
+    border: none !important;
+    box-shadow: none;
+    font-family: 'Lilita One', cursive;
+  }
+
+  input[type="text"]{
+    font-family: 'Lilita One', cursive;
+    color: #4a555f;
+  }
+
+  hr{
+    width: 200px;
+    background-color: #da5a3f;
+    height: 10px;
+  }
+
+  input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.brick{
+  height: 50px;
+  width: 50px;
+  background-color: #e99d64;
+  opacity: 0;
+  font-size: 40px;
+  line-height: 90%;
+  text-align: center;
+  padding-top: 5px;
+  font-family: 'Lilita One', cursive;
+
+}
+
+.brickBig{
+  height: 100px;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  background-color: #e99d64;
+  opacity: 0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 90%;
+  padding-top: 10px;
+  font-family: 'Lilita One', cursive;
+  transition: background-color 0.5s ease;
+}
+
+.brickBig:hover{
+  background-color: #da5a3f;
+  cursor: pointer;
+}
+
+#button:hover{
+  background-color: #da5a3f;
+  cursor: pointer;
+}
+
+.bigBoy{
+  margin-bottom: 300px;
+}
